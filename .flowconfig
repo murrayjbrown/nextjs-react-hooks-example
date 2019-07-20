@@ -1,0 +1,59 @@
+[ignore]
+<PROJECT_ROOT>/cypress/
+<PROJECT_ROOT>/data/
+<PROJECT_ROOT>/flow-typed/
+<PROJECT_ROOT>/logs/
+<PROJECT_ROOT>/public/
+<PROJECT_ROOT>/test/
+
+[include]
+<PROJECT_ROOT>/client/
+<PROJECT_ROOT>/pages/
+<PROJECT_ROOT>/server/
+
+[libs]
+/flow-typed/
+
+[lints]
+deprecated-utility=off
+dynamic-export=off
+nonstrict-import=warn
+sketchy-null=warn
+sketchy-number=warn
+unclear-type=warn
+unnecessary-invariant=warn
+unnecessary-optional-chain=warn
+unsafe-getters-setters=warn
+untyped-import=warn
+untyped-type-import=warn
+
+[options]
+include_warnings=true
+log.file=./logs/flow.log
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.jsx
+module.file_ext=.mjs
+module.file_ext=.scss
+module.name_mapper='^@client\/\(.*\)$' -> '<PROJECT_ROOT>/client/\1'
+module.name_mapper='^@client$' -> '<PROJECT_ROOT>/client'
+module.name_mapper='^@config\/\(.*\)$' -> '<PROJECT_ROOT>/config/\1'
+module.name_mapper='^@config$' -> '<PROJECT_ROOT>/config'
+module.name_mapper='^@pages\/\(.*\)$' -> '<PROJECT_ROOT>/pages/\1'
+module.name_mapper='^@pages$' -> '<PROJECT_ROOT>/pages'
+module.name_mapper='^@public\/\(.*\)$' -> '<PROJECT_ROOT>/public/\1'
+module.name_mapper='^@public$' -> '<PROJECT_ROOT>/public'
+module.name_mapper='^@server\/\(.*\)$' -> '<PROJECT_ROOT>/server/\1'
+module.name_mapper='^@server$' -> '<PROJECT_ROOT>/server'
+module.name_mapper='^@test\/\(.*\)$' -> '<PROJECT_ROOT>/test/\1'
+module.name_mapper='^@test$' -> '<PROJECT_ROOT>/test'
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=server
+module.system.node.resolve_dirname=client
+
+[strict]
+sketchy-null
+sketchy-number
+unclear-type
+unsafe-getters-setters
+untyped-type-import

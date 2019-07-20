@@ -1,0 +1,23 @@
+.counterShared {
+  margin-top: 1rem;
+	text-align: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	> label {
+		color: darkgray;
+		font-family: sans-serif;
+		font-size: medium;
+		font-style: italic;
+		font-weight: lighter;
+	}
+
+	> .count {
+		color: red;
+		font-family: serif;
+		font-size: x-large;
+		font-style: bold;
+	}
+
+
+};

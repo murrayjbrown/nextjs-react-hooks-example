@@ -1,0 +1,71 @@
+{
+  "extends": [
+    "eslint:recommended",
+		"plugin:react/recommended",
+		"prettier"
+  ],
+  "env": {
+    "es6": true,
+		"node": true
+	},
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+		"react-hooks",
+		"ava",
+		"chai-friendly",
+		"jest",
+		"cypress"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-indent": [
+      "warn",
+      "tab",
+      {
+        "checkAttributes": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "indent": [
+      "warn",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-extra-semi": [
+      "off"
+    ],
+    "no-unused-vars": [
+      "warn"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ]
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect",
+      "flowVersion": "detect"
+    }
+  }
+}

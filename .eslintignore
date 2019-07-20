@@ -1,0 +1,6 @@
+.next/**
+cypress/**
+data/**
+logs/**
+node_modules/**
+test/**

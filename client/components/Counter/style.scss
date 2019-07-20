@@ -1,0 +1,80 @@
+
+@charset 'utf-8';
+
+@import 'node_modules/bulma/sass/utilities/initial-variables.sass';
+@import 'client/styles/initial-variables.scss';
+@import 'node_modules/bulma/sass/utilities/functions.sass';
+@import 'node_modules/bulma/sass/utilities/derived-variables.sass';
+@import 'client/styles/variables.scss';
+// @import 'node_modules/bulma/sass/utilities/animations.sass';
+@import 'node_modules/bulma/sass/utilities/mixins.sass';
+@import 'node_modules/bulma/sass/utilities/controls.sass';
+@import 'node_modules/bulma/sass/elements/button.sass';
+//@import 'node_modules/bulma/bulma.sass';
+@import 'client/styles/typography.scss';
+
+.counter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 0.5rem;
+
+  > .count {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: serif;
+    font-size: x-large;
+    font-style: bold;
+    justify-content: center;
+	}
+
+	> label.count {
+		font-family: sans-serif;
+		font-size: medium;
+		font-style: italic;
+		font-weight: lighter;
+		margin-bottom: 0.2rem;
+	}
+
+  > .controls {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+		> .incrementButton, .decrementButton, .resetButton {
+			@extend .button;
+			@extend .is-small;
+
+			> label {
+				font-family: sans-serif;
+				font-size: small;
+				font-style: regular;
+				font-weight: bold;
+			}
+		}
+
+    > .incrementButton {
+      @extend .is-primary;
+      color: white;
+    };
+
+    > .decrementButton {
+      @extend .is-dark;
+      color: yellow;
+    };
+
+    > .resetButton {
+      @extend .is-warning;
+      color: black;
+		};
+
+  };
+};
+
+
