@@ -138,6 +138,7 @@ The `config` folder contains files specifying default configuration settings and
 -  **client** - client-side application & unit test cases
 -  **config** - configuration files
 -  **cypress** - integration & end-to-end test cases
+-  *flow-typed* - flow type definitions
 -  *logs* - log files
 -  *node_modules* - Node.js modules
 -  **pages** - Next.js routed pages

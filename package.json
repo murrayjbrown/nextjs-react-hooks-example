@@ -38,8 +38,8 @@
 		"test-unit-dev:js": "TESTSPEC='test' ava",
 		"test-unit-dev:jsx": "TESTSPEC='test' jest --passWithNoTests",
 		"test-int": "concurrently 'npm run stop' 'npm run start' 'cypress run'",
-    "test-int-dev": "concurrently 'npm run stop' 'npm run dev' 'cypress open'",
-    "trace": "NODE_ENV=development node --trace-warnings server/"
+		"test-int-dev": "concurrently 'npm run stop' 'npm run dev' 'cypress open'",
+		"trace": "NODE_ENV=development node --trace-warnings server/"
 	},
 	"main": "server/index.js",
 	"directories": {
