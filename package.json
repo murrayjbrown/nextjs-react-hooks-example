@@ -1,26 +1,27 @@
 {
-	"name": "nextjs-react-hooks-bulma",
-	"description": "Next.js Application w/ React Hooks & Bulma",
-	"version": "0.1.0",
+	"name": "nextjs-react-hooks-example",
+	"description": "Example Next.js Application using React Hooks",
+	"version": "1.0.0",
 	"license": "MIT",
+	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://gitlab.com/mjbrown/feathers-next-primus-react-hooks-bulma"
+		"url": "https://gitlab.com/mjbrown/nextjs-react-hooks-example"
 	},
 	"author": {
 		"name": "Murray J Brown",
 		"email": "mjb@mjbrown.com"
 	},
 	"contributors": [],
-	"bugs": {},
+	"bugs": {
+		"url": "https://gitlab.com/mjbrown/nextjs-react-hooks-example/issues"
+	},
 	"scripts": {
 		"build": "npm run style && NODE_ENV=production next build",
 		"clean": "rimraf node_modules/.cache .next",
-		"debug": "NODE_ENV=development node --trace-warnings server/",
 		"dev": "npm run style && NODE_ENV=development nodemon -w server server/",
 		"flow": "flow --include-warnings --show-all-errors --strip-root",
 		"lint": "eslint --config .eslintrc.json client/ pages/ server/ test/",
-		"mocha": "NODE_ENV=testing mocha --require @babel/register client/**.spec.js server/**.spec.js test/**.spec.js --recursive --exit",
 		"postinstall": "flow-typed install",
 		"purge": "npm run clean && rimraf data logs",
 		"start": "npm run build && NODE_ENV=production pm2 start server/",
@@ -37,17 +38,18 @@
 		"test-unit-dev:js": "TESTSPEC='test' ava",
 		"test-unit-dev:jsx": "TESTSPEC='test' jest --passWithNoTests",
 		"test-int": "concurrently 'npm run stop' 'npm run start' 'cypress run'",
-		"test-int-dev": "concurrently 'npm run stop' 'npm run dev' 'cypress open'"
+    "test-int-dev": "concurrently 'npm run stop' 'npm run dev' 'cypress open'",
+    "trace": "NODE_ENV=development node --trace-warnings server/"
 	},
+	"main": "server/index.js",
 	"directories": {
 		"lib": "client",
 		"server": "server",
 		"test": "test"
 	},
-	"main": "server/index.js",
 	"engines": {
-		"node": "^11.0.0",
-		"npm": ">= 3.0.0"
+		"node": ">= 11.9.0",
+		"npm": ">= 6.9.0"
 	},
 	"dependencies": {
 		"@zeit/next-css": "^1.0.1",
@@ -126,6 +128,7 @@
 	"nodemonConfig": {
 		"ignore": [
 			".next/*",
+			"cypress/*",
 			"test/*"
 		],
 		"delay": "2500"

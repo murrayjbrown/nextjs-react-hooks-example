@@ -1,6 +1,6 @@
-# An Next.js Application using React Hooks
+# Example Next.js Application using React Hooks
 
-This is an experimental project I've undertaken to hone my skills with various technologies of the Node.js front-end ecosystem, notably:
+This is an experimental project for honing skills with various technologies of the Node.js front-end ecosystem, notably:
 
 - Next.js React framework
 - React Hooks
@@ -57,15 +57,18 @@ npm run test
 npm run test-unit
 ```
 
+The AVA test runner is used for JavaScript logical tests (i.e., files matching `*.js`).
+
+The Jest test runner is used for JSX user interface tests (i.e., files matching `*.jsx`).
+
 #### Run unit tests under development
 
 ```bash
 npm run test-unit-dev
 ```
 
-Unit tests under development are distinguished by a `.test.js` filename suffix,
-whereas completed test cases are denoted with a `.spec.js` filename suffix.
-
+Unit tests under development are distinguished by a `.test.js` or `.test.jsx` filename suffix,
+whereas completed test cases are denoted with a `.spec.js` or `.spec.jsx` filename suffix.
 
 #### Run all unit tests
 
@@ -73,7 +76,7 @@ whereas completed test cases are denoted with a `.spec.js` filename suffix.
 npm run test-unit-all
 ```
 
-This will run tests with filenames suffixed `.spec.js` and `.test.js`.
+This will run all tests for filenames with suffix matching `.(spec|test).js?(x)`.
 
 
 #### Run integration and end-to-end tests
@@ -101,10 +104,10 @@ npm run clean
 npm run dev
 ```
 
-#### Debug application
+#### Start application with trace warnings
 
 ```bash
-npm run debug
+npm run trace
 ```
 
 #### Check programming style
@@ -125,10 +128,32 @@ npm run flow
 npm run style
 ```
 
+## Configuration
+
+The `config` folder contains files specifying default configuration settings and specific override settings for production and testing environments.
+
+## Project Folder Organization
+
+-  *.next* - generated Next.js files
+-  **client** - client-side application & unit test cases
+-  **config** - configuration files
+-  **cypress** - integration & end-to-end test cases
+-  *logs* - log files
+-  *node_modules* - Node.js modules
+-  **pages** - Next.js routed pages
+-  **public** - static web content
+-  **server** - server-side application & unit test cases
+-  **test** - test support files
+
+
 ## Featured technologies
 
 - [x] Node.js runtime
-- [x] Next.js application
+- [x] Express application framework
+  - [x] static routing
+  - [x] helmet header security
+  - [x] CORS
+- [x] Next.js application framework
   - [x] file system routing (pages)
   - [x] API routing
   - [x] automatic Code Splitting

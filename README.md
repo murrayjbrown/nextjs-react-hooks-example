@@ -1,7 +1,7 @@
-# An Next.js Application using React Hooks
+# Example Next.js Application using React Hooks
 
 
-This is an experimental project I've undertaken to hone my skills with various technologies of the Node.js front-end ecosystem, notably:
+This is an experimental project for honing skills with various technologies of the Node.js front-end ecosystem, notably:
 
 - Next.js React framework
 - React Hooks
@@ -22,11 +22,17 @@ npm install
 
 ## Basic Operation
 
+### Commands
+
 ```bash
 npm run build
 npm run start
 npm run stop
 ```
+
+# Usage
+
+Once started, the application can be accessed via a web browser at the location `http://localhost:3030`.
 
 ## Documentation
 
