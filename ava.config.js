@@ -32,7 +32,7 @@ export default function config() {
 		compileEnhancements: false,
 		require: [
 			'esm',
-			'./babel.test.register.js'
+			'./.babel.register.test.js'
 		],
 		babel: {
 			testOptions: {

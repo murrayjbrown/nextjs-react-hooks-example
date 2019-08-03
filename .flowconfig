@@ -3,6 +3,7 @@
 <PROJECT_ROOT>/data/
 <PROJECT_ROOT>/flow-typed/
 <PROJECT_ROOT>/logs/
+<PROJECT_ROOT>/node_modules/bcryptjs/src/
 <PROJECT_ROOT>/public/
 <PROJECT_ROOT>/test/
 
@@ -12,7 +13,7 @@
 <PROJECT_ROOT>/server/
 
 [libs]
-/flow-typed/
+<PROJECT_ROOT>/flow-typed/
 
 [lints]
 deprecated-utility=off
@@ -29,7 +30,6 @@ untyped-type-import=warn
 
 [options]
 include_warnings=true
-log.file=./logs/flow.log
 module.file_ext=.js
 module.file_ext=.json
 module.file_ext=.jsx

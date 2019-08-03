@@ -4,14 +4,15 @@ This is an experimental project for honing skills with various technologies of t
 
 - Next.js React framework
 - React Hooks
-- Bulma Sass styling
+- JSX styling w/ Bulma Sass
 - Markdown
 - Immer for state immutability
 - axios http w/ async/wait
 - AVA and Jest for unit testing
+- ARIA attributes for accessibilty & testing
 - Cypress for integration and end-to-end testing
 
-*Note:* This is just a simple demo application. It is not intended to be complete, nor useful except to present how the appied technologies can be utilized. The test coverage just provides a few examples of various test cases.
+*Note:* This is just a simple demo application. It is not intended to be complete, nor useful except to present how the applied technologies can be utilized. The test coverage is not thorough, it provides just a few example cases of various kinds of tests.
 
 ## Installation
 
@@ -31,13 +32,13 @@ npm install
 npm run build
 ```
 
-#### Start application
+#### Start application daemon via process manager
 
 ```bash
 npm run start
 ```
 
-#### Stop application
+#### Stop application daemon via process manager
 
 ```bash
 npm run stop
@@ -68,7 +69,7 @@ npm run test-unit-dev
 ```
 
 Unit tests under development are distinguished by a `.test.js` or `.test.jsx` filename suffix,
-whereas completed test cases are denoted with a `.spec.js` or `.spec.jsx` filename suffix.
+whereas working test cases are denoted with a `.spec.js` or `.spec.jsx` filename suffix.
 
 #### Run all unit tests
 
@@ -98,13 +99,13 @@ npm run test-int-dev
 ```bash
 npm run clean
 ```
-#### Start application (foreground)
+#### Start application in foreground
 
 ```bash
 npm run dev
 ```
 
-#### Start application with trace warnings
+#### Start application in foreground with trace warnings
 
 ```bash
 npm run trace
@@ -120,6 +121,13 @@ npm run lint
 
 ```bash
 npm run flow
+```
+
+### Process manager commands
+
+Refer to the PM2 command help or [online documentation](https://github.com/Unitech/pm2).
+```bash
+npx pm2 --help
 ```
 
 #### Generate stylesheets

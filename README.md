@@ -5,10 +5,11 @@ This is an experimental project for honing skills with various technologies of t
 
 - Next.js React framework
 - React Hooks
-- Bulma Sass styling
+- JSX styling w/ Bulma Sass
 - Markdown
 - Immer for state immutability
 - axios http w/ async/wait
+- ARIA tags for accessibilty & testing
 - AVA and Jest for unit testing
 - Cypress for integration and end-to-end testing
 
