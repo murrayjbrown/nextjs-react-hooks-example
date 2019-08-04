@@ -1,6 +1,6 @@
 # folders ignored by Linguist for repo language analysis
+client/styles/* linguist-vendored
 config/* linguist-vendored
 cypress/* linguist-vendored
-pages/* linguist-vendored
 public/* linguist-vendored
 test/* linguist-vendored
