@@ -16,5 +16,3 @@ export default function Home() {
 		</div>
 	);
 }
-
-// <style jsx>{styles}</style>

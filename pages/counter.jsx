@@ -1,9 +1,8 @@
 // @flow
 import React, { useEffect } from 'react';
-import dynamic from 'next/dynamic';
+import Counter from '@client/components/Counter';
+import CounterContainer from '@client/containers/CounterContainer';
 
-const Counter = dynamic(import('../client/components/Counter'), { ssr: false });
-const CounterContainer = dynamic(import('../client/components/CounterContainer'), { ssr: false });
 
 export default function Home() {
 	useEffect(() => {
@@ -36,5 +35,3 @@ export default function Home() {
 		</div>
 	);
 }
-
-// <CounterShared title='Shared' />

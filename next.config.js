@@ -1,12 +1,11 @@
 const path = require('path');
-const withPlugins = require('next-compose-plugins');
 const withSass = require('@zeit/next-sass');
 
 // for those who using CDN
 const { ASSET_HOST } = process.env;
 const assetPrefix = ASSET_HOST || '';
 
-module.exports = withPlugins([[withSass]], {
+module.exports = withSass({
 	// eslint-disable-next-line no-unused-vars
 	webpack: (config, { dev }) => {
 		config.output.publicPath = `${assetPrefix}${config.output.publicPath}`;

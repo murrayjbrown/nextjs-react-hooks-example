@@ -112,7 +112,6 @@
 		"jest": "^24.8.0",
 		"jsdom": "^15.1.1",
 		"jsdom-global": "^3.0.2",
-		"next-compose-plugins": "^2.2.0",
 		"nodemon": "^1.18.11",
 		"normalize-scss": "^7.0.1",
 		"prettier": "^1.17.0",
